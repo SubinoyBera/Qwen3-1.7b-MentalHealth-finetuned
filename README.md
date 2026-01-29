@@ -57,7 +57,7 @@ model = AutoModelForCausalLM.from_pretrained(model_id, trust_remote_code=True, d
 prompt = "How would you support someone experiencing burnout at work?"
 inputs = tokenizer(prompt, return_tensors="pt").to(device)
 
-outputs = trained_model.generate(
+outputs = model.generate(
     **inputs,
     max_new_tokens=512,
     temperature=0.7,
