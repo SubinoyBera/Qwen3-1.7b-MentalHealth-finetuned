@@ -42,7 +42,7 @@ This approach demonstrates how modern LLMs can be customized for domain-specific
 - HuggingFace: Platform where the community collaborates on models, datasets, etc., and for uploading the trained models.
 - GPU: T4 (Colab Environment)
 
-### Inference Example
+### 🧩 Get Started
 
 ```bash
 import torch
@@ -70,6 +70,12 @@ outputs = trained_model.generate(
 )
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ```
+
+### ⚠️ Ethical Considerations
+
+This model is not a replacement for professional mental health care, nor should it be directly used in production settings.
+It is intended for: Educational exploration and learning, Controlled experimentation, Demo projects, and Prototyping.
+
 <br>
 
 🎗️🙏 **THANK YOU !!** :) <br>
